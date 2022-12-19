@@ -1,0 +1,6 @@
+:pick_up
+
+> [introduced, !picked_item]
+	set_global picked_item true
+	set_global i/inv_bad_bamboo true
+	set_active bad_bamboo false

@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://globals/item.gd" type="Script" id=1]
+[ext_resource path="res://scenes/intro-game/sprites/bad-bamboo.png" type="Texture" id=2]
+
+[node name="bad_bamboo" type="Node2D"]
+
+script/script = ExtResource( 1 )
+animations = null
+speed = 300
+scale_on_map = false
+light_on_map = false
+tooltip = "A bamboo stick"
+action = ""
+events_path = "res://scenes/intro-game/bad_bamboo.esc"
+global_id = "bad_bamboo"
+use_combine = false
+inventory = false
+use_action_menu = true
+interact_angle = 90
+talk_animation = "talk"
+active = true
+placeholders = {  }
+
+[node name="area" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -82.0
+margin/top = -502.0
+margin/right = 142.0
+margin/bottom = 29.0
+
+[node name="animation" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 22.8846, -246.388 )
+texture = ExtResource( 2 )
+
+
